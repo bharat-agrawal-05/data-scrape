@@ -127,7 +127,7 @@ def build_json_record(file_path, url):
     domain = urlparse(url).netloc
     checksum = sha256_checksum(file_path)
     checksums = load_checksums()
-
+    document_id = os.path.splitext(os.path.basename(file_path))[0] + "_" + checksum[:8]
     # delta processing check with checksum
     if checksums.get(document_id) == checksum:
         print(f"Skipping unchanged document: {document_id}")

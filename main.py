@@ -18,7 +18,7 @@ JSON_OUTPUT_DIR = "json_output"
 HEADERS = {'User-Agent': 'bot/1.0'}
 DELAY = 1
 SUPPORTED_FORMATS = ['.pdf', '.epub', '.html']
-CHECKSUMS_FILE = 'checksums.txt'
+CHECKSUMS_FILE = 'checksums.json'
 
 # %%
 def ensure_dirs():

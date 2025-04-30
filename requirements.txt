@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+PyPDF2
+langdetect
+pytesseract
+pdf2image
+hashlib
